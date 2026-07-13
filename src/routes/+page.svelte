@@ -38,7 +38,7 @@
 <h2>4 &nbsp; Wire schedule</h2>
 
 <h3>4.1 &nbsp; PSU assembly (enclosure)</h3>
-<p class="meta">The PSU box is an assembly: the MEAN WELL LRS-350-24, a fused mains inlet switch, and 6 DC output jacks, in a 3D-printed enclosure. These are the wires inside that box.</p>
+<p class="meta">The PSU box is an assembly: the MEAN WELL LRS-350-24, a fused mains inlet switch, and 6 DC output jacks, in a 3D-printed enclosure. These are the wires inside that box. Enclosure CAD: <a href="https://cad.onshape.com/documents/ff3546ceb03f5fc907e6ed4c/v/f06d891a27f145d952ee5678/e/b9f80b00e4dd34407e23b560" target="_blank" rel="noopener">Onshape</a>.</p>
 <table>
   <thead><tr><th>Segment</th><th>From</th><th>To</th><th>Cond.</th><th>Wire</th></tr></thead>
   <tbody>
