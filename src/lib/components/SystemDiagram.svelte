@@ -5,7 +5,7 @@
 -->
 <figure>
   <div class="fig">
-    <svg viewBox="0 0 960 545" xmlns="http://www.w3.org/2000/svg"
+    <svg viewBox="-120 0 1080 545" xmlns="http://www.w3.org/2000/svg"
          font-family="-apple-system,Segoe UI,Roboto,sans-serif">
       <g stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round">
         <!-- PSU + board boxes -->
@@ -57,7 +57,11 @@
       <text x="24" y="66" font-size="13" font-weight="700">MEAN WELL</text>
       <text x="24" y="82" font-size="12" font-weight="700">LRS-350-24</text>
       <text x="24" y="100" font-size="11" fill="#666">24V &middot; 14.6A &middot; 350W</text>
-      <text x="24" y="117" font-size="11" fill="#666">AC in: fused</text>
+      <!-- AC power inlet, opposite side from the DC jacks -->
+      <line x1="-56" y1="118" x2="14" y2="118" stroke="#333" stroke-width="1.5" stroke-linecap="round" />
+      <rect x="-96" y="104" width="40" height="28" rx="3" fill="#fff" stroke="#333" stroke-width="1.2" />
+      <text x="-76" y="122" font-size="10" font-weight="700" text-anchor="middle">AC in</text>
+      <text x="-76" y="147" font-size="9" fill="#666" text-anchor="middle">fused inlet switch</text>
       <g font-size="11" fill="#333" text-anchor="end" font-weight="700">
         <text x="154" y="194">J1</text><text x="154" y="364">J2</text><text x="154" y="414">J3</text>
         <text x="154" y="464">J4</text><text x="154" y="514">J5</text><text x="154" y="94">J6</text>
