@@ -85,6 +85,7 @@
     <tr><td class="id">CH</td><td>Chute stepper</td><td>basically board v1.3, 4x1 dupont</td><td>Chute stepper - flying leads, need prep</td><td>4</td><td>40 in</td></tr>
   </tbody>
 </table>
+<div class="note"><b>Recommended change:</b> switch all the stepper wires from 4x1 dupont to JST-PH 4-pin to help ensure a better connection.</div>
 
 <h3>4.5 &nbsp; Servo adapter (ribbon)</h3>
 <table>
