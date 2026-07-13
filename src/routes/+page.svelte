@@ -40,10 +40,10 @@
 <h3>4.1 &nbsp; PSU assembly (enclosure)</h3>
 <p class="meta">The PSU box is an assembly: the MEAN WELL LRS-350-24, a fused mains inlet switch, and 6 DC output jacks, in a 3D-printed enclosure. These are the wires inside that box. Enclosure CAD: <a href="https://cad.onshape.com/documents/ff3546ceb03f5fc907e6ed4c/v/f06d891a27f145d952ee5678/e/b9f80b00e4dd34407e23b560" target="_blank" rel="noopener">Onshape</a>.</p>
 <table>
-  <thead><tr><th>Segment</th><th>From</th><th>To</th><th>Cond.</th><th>Wire</th></tr></thead>
+  <thead><tr><th>Segment</th><th>From</th><th>To</th><th>Cond.</th><th>Length</th><th>Gauge</th></tr></thead>
   <tbody>
-    <tr><td>Mains inlet</td><td>Fused inlet switch (3Dman, 10A fuse)</td><td>PSU AC input (L / N / earth)</td><td>3</td><td>18 AWG</td></tr>
-    <tr><td>DC output jacks (&times;6)</td><td>PSU 24V output, 2&times; fork/screw terminal</td><td>Female DC jack</td><td>2</td><td>4 in</td></tr>
+    <tr><td>Mains inlet</td><td>Fused inlet switch (3Dman, 10A fuse)</td><td>PSU AC input (L / N / earth)</td><td>3</td><td>-</td><td>18 AWG</td></tr>
+    <tr><td>DC output jacks (&times;6)</td><td>PSU 24V output, 2&times; fork/screw terminal</td><td>Female DC jack</td><td>2</td><td>4 in</td><td>TBD</td></tr>
   </tbody>
 </table>
 
@@ -80,12 +80,12 @@
 <table>
   <thead><tr><th>ID</th><th>Segment</th><th>From</th><th>To</th><th>Cond.</th><th>Length</th></tr></thead>
   <tbody>
-    <tr><td class="id">LIM</td><td>Limit switch</td><td>basically board v1.3, 2x1 dupont</td><td>Limit switch</td><td>2</td><td>unknown</td></tr>
+    <tr><td class="id">LIM</td><td>Limit switch</td><td>basically board v1.3, 2x1 dupont</td><td>Limit switch</td><td>2</td><td>24 in</td></tr>
     <tr><td class="id">S1-4</td><td>Stepper, channels 1-4 (&times;4)</td><td>basically board v1.3, 4x1 dupont</td><td>Stepper (polarity: inner two flipped vs StepperOnline)</td><td>4</td><td>40 in</td></tr>
     <tr><td class="id">CH</td><td>Chute stepper</td><td>basically board v1.3, 4x1 dupont</td><td>Chute stepper - flying leads, need prep</td><td>4</td><td>40 in</td></tr>
   </tbody>
 </table>
-<div class="note"><b>Recommended change:</b> switch all the stepper wires from 4x1 dupont to JST-PH 4-pin to help ensure a better connection.</div>
+<div class="warn"><b>Recommended change:</b> We should switch all the stepper wires from 4x1 dupont to JST-PH 4-pin to help ensure a better connection.</div>
 
 <h3>4.5 &nbsp; Servo adapter (ribbon)</h3>
 <table>
