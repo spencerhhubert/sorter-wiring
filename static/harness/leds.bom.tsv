@@ -1,0 +1,7 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 2 x 22 AWG	150	in	L1, L1P, L2, L2P, L3, L3P, LIM
+2	Connector, Bare tinned leads, 2 pins	1		SW
+3	Connector, DC jack 5.5x2.1 female, inline, 2 pins	3		LJ1, LJ2, LJ3
+4	Connector, DC plug 5.5x2.1 male, 2 pins	3		LP1, LP2, LP3
+5	Connector, Dupont 1x2 female, 2.54 mm, 2 pins	4		BOARD_L1, BOARD_L2, BOARD_L3, BOARD_LIM
+6	Connector, Solder pads, 2 pins	3		COB1, COB2, STRIP

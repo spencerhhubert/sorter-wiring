@@ -11,6 +11,8 @@
     <span class="brand">Sorter V2 wiring</span>
     <a href="/" class:active={path === '/'}>Wire harness</a>
     <a href="/steppers" class:active={path === '/steppers'}>Stepper connectors</a>
+    <a href="/order" class:active={path === '/order'}>Order spec</a>
+    <a href="/wireviz" class:active={path === '/wireviz'}>WireViz</a>
     <a href="/setup" class:active={path === '/setup'}>Setup photos</a>
   </nav>
   {@render children()}

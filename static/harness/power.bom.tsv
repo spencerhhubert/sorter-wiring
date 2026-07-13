@@ -1,0 +1,8 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 2 x 18 AWG	24	in	PJ1, PJ2, PJ3, PJ4, PJ5, PJ6
+2	Cable, 2 x 22 AWG	126	in	W1, W2, W3, W4, W5
+3	Connector, Bare tinned leads, 2 pins	3		BUCK, FAN1, FAN2
+4	Connector, DC jack 5.5x2.1 female, panel-mount, 2 pins	6		J1, J2, J3, J4, J5, J6
+5	Connector, DC plug 5.5x2.1 male, 2 pins	6		HUB, P1, P2, P3, P4, P5
+6	Connector, JST XH 2-pin (XHP-2), female, 2 pins	1		BOARD_PWR
+7	Connector, LRS-350-24 output, screw terminals, fork terminals, 2 pins	1		PSU

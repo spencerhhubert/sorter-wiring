@@ -131,3 +131,4 @@
   <li><b>Gauge per segment.</b> Current draw per load is needed to spec gauge.</li>
   <li><b>SKU reduction.</b> Once gauges are known, standardize on as few gauges and connector types as possible.</li>
 </ol>
+<p class="meta">The <a href="/order">order spec</a> page fills these in with guesses (marked as guesses) for ordering purposes; nothing there is confirmed.</p>

@@ -1,0 +1,5 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 4 x 24 AWG	80	in	CH, S
+2	Connector, Bare tinned leads, labeled 1-4, 4 pins	1		CH_LEADS
+3	Connector, JST PH 4-pin (PHR-4), female, 4 pins	2		BOARD_CH, BOARD_S
+4	Connector, XH2.54 4-pin inline male (clone), male, 4 pins	1		MOTOR_LEAD
