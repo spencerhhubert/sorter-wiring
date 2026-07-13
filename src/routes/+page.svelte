@@ -74,7 +74,7 @@
     <tr><td class="id">L3p</td><td>LED strip pigtail</td><td>Male DC jack</td><td>LED strip (6000K)</td><td>2</td><td>6 in</td></tr>
   </tbody>
 </table>
-<div class="note">LED strip for the classification channel is <b>6000K</b>. Length: 2&times; revolutions around the classification channel inner tube.</div>
+<div class="note">LED strip for the classification channel is <b>6000K</b>. Length: 2&times; revolutions around the classification channel inner tube = 108.400 mm &times; 2 &approx; 220 mm.</div>
 
 <h3>4.4 &nbsp; Sensors &amp; steppers (from basically board v1.3)</h3>
 <table>
