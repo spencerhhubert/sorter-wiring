@@ -205,6 +205,15 @@ figcaption {
   display: inline-block;
 }
 
+img.layout {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
 /* connector reference cards */
 .cref {
   display: flex;

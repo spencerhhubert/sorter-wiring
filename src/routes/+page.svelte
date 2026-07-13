@@ -7,7 +7,7 @@
 
 <h1>Wire harness</h1>
 <p class="sub">Working documentation for review.</p>
-<p class="meta">24V power distribution from the PSU, plus everything connected to basically board v1.3. Wire IDs match the schedule tables. Open items in section 6.</p>
+<p class="meta">24V power distribution from the PSU, plus everything connected to basically board v1.3. Wire IDs match the schedule tables. Open items in section 7.</p>
 
 <h2>1 &nbsp; Power supply</h2>
 <dl class="spec">
@@ -17,19 +17,25 @@
   <dt>DC outputs</dt><dd>6 &times; female DC jack, each a 4 in wire with 2 &times; fork / screw terminals onto the PSU output</dd>
 </dl>
 
-<h2>2 &nbsp; Interconnect diagram</h2>
+<h2>2 &nbsp; Component layout</h2>
+<figure>
+  <img class="layout" src="/component-layout.png" alt="Top-down physical component layout on the machine" />
+  <figcaption>Physical placement on the machine (top-down): PSU, Orange Pi, basically board v1.3, USB hub, Pico, the chute stepper and its limit switch, and the ribbon run.</figcaption>
+</figure>
+
+<h2>3 &nbsp; Interconnect diagram</h2>
 <SystemDiagram />
 
-<h3>2.1 &nbsp; Stepper polarity</h3>
+<h3>3.1 &nbsp; Stepper polarity</h3>
 <div class="note flag">
   Source of truth is the basically board v1.3 pinout. Relative to how StepperOnline ships these motors, the inner two wires are flipped: shipped <code>1&middot;2&middot;3&middot;4</code> &rarr; basically board v1.3 order <code>1&middot;3&middot;2&middot;4</code>. Mark polarity on each of the 4 channel steppers.
 </div>
 <p class="meta">Full basically board v1.3 pinout (J23-J40), connector-to-connector mapping, and connector photos: <a href="/steppers">stepper connectors</a>.</p>
 <PinSwap />
 
-<h2>3 &nbsp; Wire schedule</h2>
+<h2>4 &nbsp; Wire schedule</h2>
 
-<h3>3.1 &nbsp; From PSU (24V)</h3>
+<h3>4.1 &nbsp; From PSU (24V)</h3>
 <table>
   <thead><tr><th>ID</th><th>Load</th><th>From</th><th>To</th><th>Cond.</th><th>Length</th><th>Gauge</th></tr></thead>
   <tbody>
@@ -43,7 +49,7 @@
 </table>
 <p class="meta">J6 output is unassigned. Confirm spare or missing load.</p>
 
-<h3>3.2 &nbsp; LEDs (from basically board v1.3)</h3>
+<h3>4.2 &nbsp; LEDs (from basically board v1.3)</h3>
 <p class="meta">All three LED drops share one power connector on basically board v1.3: J1, a 2-pin JST VH (3.96 mm pitch). Each drop has a female/male DC jack (unplug point) and a 4 in pigtail into the module.</p>
 <table>
   <thead><tr><th>ID</th><th>Drop</th><th>From (board)</th><th>To</th><th>Cond.</th><th>Length</th></tr></thead>
@@ -55,7 +61,7 @@
 </table>
 <div class="note">LED strip for the classification channel is <b>6000K</b>. Length: 2&times; revolutions around the classification channel inner tube.</div>
 
-<h3>3.3 &nbsp; Sensors &amp; steppers (from basically board v1.3)</h3>
+<h3>4.3 &nbsp; Sensors &amp; steppers (from basically board v1.3)</h3>
 <table>
   <thead><tr><th>ID</th><th>Segment</th><th>From</th><th>To</th><th>Cond.</th><th>Length</th></tr></thead>
   <tbody>
@@ -65,7 +71,7 @@
   </tbody>
 </table>
 
-<h3>3.4 &nbsp; Servo adapter (ribbon)</h3>
+<h3>4.4 &nbsp; Servo adapter (ribbon)</h3>
 <table>
   <thead><tr><th>ID</th><th>Segment</th><th>From</th><th>To</th><th>Cond.</th><th>Length</th></tr></thead>
   <tbody>
@@ -77,7 +83,7 @@
   <figcaption>uxcell 16-pin IDC flat ribbon, FC/FC, 2.54 mm pitch, 1 m, gray.</figcaption>
 </figure>
 
-<h2>4 &nbsp; Parts</h2>
+<h2>5 &nbsp; Parts</h2>
 <ul class="tight">
   <li>MEAN WELL LRS-350-24, 350.4W 24V 14.6A single output &nbsp;&middot;&nbsp; <a href="https://www.amazon.com/dp/B013ETVO12">link</a></li>
   <li>DC 12V/24V to 5V USB-C buck converter, 5A 25W, powers Orange Pi 5 &nbsp;&middot;&nbsp; <a href="https://www.amazon.com/dp/B0FV3P6KLS">link</a></li>
@@ -87,7 +93,7 @@
   <li>Orange Pi 5</li>
 </ul>
 
-<h2>5 &nbsp; Connector / terminal types</h2>
+<h2>6 &nbsp; Connector / terminal types</h2>
 <ul class="tight">
   <li>DC barrel jack, female: PSU outputs, LED junction</li>
   <li>DC barrel jack, male: loads, LED pigtails</li>
@@ -99,7 +105,7 @@
   <li>16-pin IDC (FC), 2.54 mm: ribbon to first servo adapter board</li>
 </ul>
 
-<h2>6 &nbsp; Open items</h2>
+<h2>7 &nbsp; Open items</h2>
 <ol>
   <li><b>Lengths.</b> W1, W4, W5 are 36 in and longer than necessary. Pick final lengths and cut.</li>
   <li><b>JST type</b> on basically board v1.3 power input is unknown. Identify the series.</li>
