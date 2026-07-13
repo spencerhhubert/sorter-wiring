@@ -1,0 +1,249 @@
+:root {
+  --ink: #1b1b1b;
+  --muted: #666;
+  --line: #c9c9c9;
+  --box: #fafafa;
+  --flag: #a12a1e;
+  --link: #1a4fd6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 40px 28px 96px;
+}
+
+code {
+  font: 600 13px ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0 0 2px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 38px 0 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--ink);
+}
+
+h3 {
+  font-size: 13.5px;
+  font-weight: 700;
+  margin: 22px 0 8px;
+  color: #333;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 12.5px;
+  margin: 0 0 12px;
+}
+
+/* top nav */
+nav.top {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+  margin-bottom: 26px;
+  font-size: 13.5px;
+}
+nav.top .brand {
+  font-weight: 700;
+  margin-right: 4px;
+}
+nav.top a {
+  color: var(--muted);
+}
+nav.top a.active {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* spec list */
+dl.spec {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 16px;
+  font-size: 14px;
+}
+dl.spec dt {
+  color: var(--muted);
+}
+dl.spec dd {
+  margin: 0;
+}
+
+/* tables scroll horizontally instead of clipping */
+table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 2px 0 6px;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px 9px;
+  border: 1px solid var(--line);
+  vertical-align: top;
+}
+th {
+  background: var(--box);
+  font-weight: 700;
+  font-size: 12px;
+}
+td .flag,
+.flag {
+  color: var(--flag);
+  font-style: italic;
+}
+.id {
+  font: 600 12px ui-monospace, Menlo, monospace;
+  white-space: nowrap;
+}
+
+ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 5px;
+}
+ul.tight li {
+  margin-bottom: 3px;
+}
+ol {
+  margin: 0;
+  padding-left: 20px;
+}
+ol li {
+  margin-bottom: 7px;
+}
+
+.note {
+  border-left: 3px solid var(--ink);
+  background: var(--box);
+  padding: 9px 13px;
+  margin: 12px 0;
+  font-size: 13.5px;
+}
+.note.flag {
+  border-left-color: var(--flag);
+}
+.note b {
+  font-weight: 700;
+}
+
+/* figures */
+figure {
+  margin: 6px 0 4px;
+}
+.fig {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  overflow-x: auto;
+}
+.fig svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 720px;
+}
+figcaption {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.pinfig {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  display: inline-block;
+}
+
+/* connector reference cards */
+.cref {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin: 8px 0;
+}
+.cref .big {
+  width: 150px;
+  height: 112px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  flex: none;
+}
+.cref .t {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.cref .d {
+  color: var(--muted);
+  font-size: 13px;
+}
+.conncell {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.conncell img {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  flex: none;
+}
+.conncell .n {
+  font-size: 12.5px;
+}
