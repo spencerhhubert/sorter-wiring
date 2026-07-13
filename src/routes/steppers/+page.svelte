@@ -35,22 +35,22 @@
 </div>
 
 <h2>2 &nbsp; basically board v1.3 &rarr; motor connections</h2>
-<p>The 4 channel motors are StepperOnline NEMA 17, shipped with a <b>JST-XH 2.54&nbsp;mm</b> 4-pin lead (the 3D-printer "XH2.54" cable, black/green/red/blue). The chute motor ships as bare flying leads.</p>
+<p>On the board side the stepper harness uses <b>4x1 dupont</b> housings (2.54&nbsp;mm) on the parallel pin headers. The 4 channel motors are StepperOnline NEMA 17, shipped with a <b>JST-XH 2.54&nbsp;mm</b> 4-pin lead (the 3D-printer "XH2.54" cable, black/green/red/blue). The chute motor ships as bare flying leads.</p>
 <table>
   <thead><tr><th>Stepper</th><th>basically board v1.3 connector</th><th>Motor connector</th><th>Wire length</th><th>Gauge</th><th>Notes</th></tr></thead>
   <tbody>
     <tr>
       <td>Channels 1-4 (&times;4)</td>
-      <td><div class="conncell"><img src="/jst-ph.jpg" alt="JST-PH connector" /><span class="n">JST-PH 2.0&nbsp;mm, 4-pin<br />(J23 / J27 / J31 / J35)</span></div></td>
-      <td><div class="conncell"><img src="/jst-xh.jpg" alt="JST-XH stepper cable" /><span class="n">JST-XH 2.54&nbsp;mm, 4-pin<br />(StepperOnline "XH2.54")</span></div></td>
+      <td>4x1 dupont (2.54&nbsp;mm) on pin headers J24 / J28 / J32 / J36</td>
+      <td>JST-XH 2.54&nbsp;mm, 4-pin (StepperOnline "XH2.54")</td>
       <td>40 in</td>
       <td>unknown</td>
       <td>Inner two wires flipped (positions 2&harr;3) so coils line up</td>
     </tr>
     <tr>
       <td>Chute (5th)</td>
-      <td><div class="conncell"><img src="/jst-ph.jpg" alt="JST-PH connector" /><span class="n">JST-PH 2.0&nbsp;mm, 4-pin<br />(J39)</span></div></td>
-      <td><span class="n">Bare flying leads &rarr; crimp into a 4-position housing</span></td>
+      <td>4x1 dupont (2.54&nbsp;mm) on pin header J40</td>
+      <td>Bare flying leads &rarr; crimp into a 4x1 housing</td>
       <td>unknown</td>
       <td>unknown</td>
       <td>Motor has no connector; crimp leads to the coil order above</td>
@@ -65,13 +65,15 @@
 <PinSwap />
 
 <h2>3 &nbsp; Connector reference</h2>
-<div class="cref"><img class="big" src="/jst-ph.jpg" alt="JST-PH" /><div><div class="t">JST-PH 2.0&nbsp;mm, 4-pin</div><div class="d">basically board v1.3 stepper outputs: J23, J27, J31, J35, J39.</div></div></div>
-<div class="cref"><img class="big" src="/pin-header.jpg" alt="2.54mm pin header" /><div><div class="t">2.54&nbsp;mm (0.1") pin header, 4-pin</div><div class="d">Parallel headers next to each JST-PH: J24, J28, J32, J36, J40. Same pinout.</div></div></div>
-<div class="cref"><img class="big" src="/jst-xh.jpg" alt="JST-XH" /><div><div class="t">JST-XH 2.54&nbsp;mm, 4-pin ("XH2.54")</div><div class="d">StepperOnline motor lead (channels 1-4). Standard color code black/green = one coil, red/blue = the other.</div></div></div>
+<ul class="tight">
+  <li><b>4x1 dupont (2.54&nbsp;mm)</b>: board-side harness connector for the steppers, mates the 2.54&nbsp;mm pin headers J24, J28, J32, J36, J40.</li>
+  <li><b>2.54&nbsp;mm (0.1") pin header, 4-pin</b>: the board headers the dupont plugs onto (J24, J28, J32, J36, J40).</li>
+  <li><b>JST-PH 2.0&nbsp;mm, 4-pin</b>: also on the board (J23, J27, J31, J35, J39), same pinout as the headers.</li>
+  <li><b>JST-XH 2.54&nbsp;mm, 4-pin ("XH2.54")</b>: StepperOnline motor lead (channels 1-4). Color code black/green = one coil, red/blue = the other.</li>
+</ul>
 
-<h2>4 &nbsp; Sources &amp; image credits</h2>
+<h2>4 &nbsp; Sources</h2>
 <ul class="tight">
   <li>StepperOnline NEMA 17 motors (XH2.54 lead): <a href="https://www.omc-stepperonline.com/nema-17-stepper-motor">omc-stepperonline.com</a></li>
   <li>JST PH series: <a href="https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/ph-connector/">jst.com</a></li>
-  <li>Image credits: JST-PH cable, Adafruit; XH2.54 stepper cable, hta3d.com; 2.54&nbsp;mm header, Wikimedia Commons.</li>
 </ul>

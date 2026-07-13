@@ -69,6 +69,7 @@
       <text x="262" y="96" font-size="12" font-weight="700">v1.3</text>
       <text x="262" y="118" font-size="10.5" fill="#666">hub for LEDs, sensors,</text>
       <text x="262" y="132" font-size="10.5" fill="#666">steppers, servo adapters</text>
+      <text x="262" y="184" font-size="9.5" fill="#666">24V in: JST-XH female</text>
 
       <!-- PSU -> col B labels -->
       <g font-size="11" fill="#333" text-anchor="middle">
@@ -86,13 +87,13 @@
 
       <!-- board -> col C labels -->
       <g font-size="10.5" fill="#333" text-anchor="middle">
-        <text x="535" y="48">J1 &middot; JST VH &middot; 36+4 in</text>
-        <text x="535" y="93">J1 (shared)</text>
-        <text x="535" y="143">J1 (shared)</text>
-        <text x="535" y="188">limit &middot; 2-pos dupont</text>
-        <text x="535" y="233">JST-PH &middot; 4-wire &middot; 40 in</text>
-        <text x="535" y="283">JST-PH &middot; flying leads</text>
-        <text x="535" y="328">16-pin IDC ribbon &middot; 1 m</text>
+        <text x="535" y="48">L1 &middot; 2x1 dupont &middot; 36+6 in</text>
+        <text x="535" y="93">L2 &middot; 2x1 dupont &middot; 36+6 in</text>
+        <text x="535" y="143">L3 &middot; 2x1 dupont &middot; 36+6 in</text>
+        <text x="535" y="188">limit &middot; 2x1 dupont</text>
+        <text x="535" y="233">S1-4 &middot; 4x1 dupont &middot; 40 in</text>
+        <text x="535" y="283">CH &middot; 4x1 dupont &middot; flying leads</text>
+        <text x="535" y="328">RIB &middot; 16-pin IDC &middot; 1 m</text>
       </g>
 
       <!-- col B direct-load titles -->
@@ -116,8 +117,8 @@
     </svg>
   </div>
   <figcaption>
-    PSU distributes 24V to basically board v1.3 and the other direct loads (USB hub, Orange Pi, fans).
-    basically board v1.3 drives the LED drops (shared connector J1), the limit switch, the steppers, and the
-    first servo adapter board over a 16-pin IDC ribbon. Wire IDs match the schedule below.
+    PSU distributes 24V to basically board v1.3 (through a JST-XH inlet) and the other direct loads
+    (USB hub, Orange Pi, fans). basically board v1.3 then drives the LED drops (L1-L3), the limit switch,
+    the steppers, and the first servo adapter board over a 16-pin IDC ribbon. Wire IDs match the schedule below.
   </figcaption>
 </figure>
