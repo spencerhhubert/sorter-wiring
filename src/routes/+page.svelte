@@ -9,6 +9,8 @@
 <p class="sub">Working documentation for review.</p>
 <p class="meta">24V power distribution from the PSU, plus everything connected to basically board v1.3. Wire IDs match the schedule tables. Open items in section 7.</p>
 
+<div class="warn">This is just what Spencer has as of July 12th 2026. This is not the final state.</div>
+
 <h2>1 &nbsp; Power supply</h2>
 <dl class="spec">
   <dt>Model</dt><dd>MEAN WELL LRS-350-24</dd>
@@ -28,7 +30,7 @@
 
 <h3>3.1 &nbsp; Stepper polarity</h3>
 <div class="note flag">
-  Source of truth is the basically board v1.3 pinout. Relative to how StepperOnline ships these motors, the inner two wires are flipped: shipped <code>1&middot;2&middot;3&middot;4</code> &rarr; basically board v1.3 order <code>1&middot;3&middot;2&middot;4</code>. Mark polarity on each of the 4 channel steppers.
+  Source of truth is the basically board v1.3 pinout. Relative to how StepperOnline ships these motors, the inner two wires are flipped: shipped <code>1&middot;2&middot;3&middot;4</code> &rarr; basically board v1.3 order <code>1&middot;3&middot;2&middot;4</code>. Mark polarity on each of the 4 channel steppers. We did this because that is how the TMC drivers ship.
 </div>
 <p class="meta">Full basically board v1.3 pinout (J23-J40), connector-to-connector mapping, and connector reference: <a href="/steppers">stepper connectors</a>.</p>
 <PinSwap />
